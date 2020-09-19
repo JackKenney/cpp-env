@@ -9,11 +9,11 @@ Version 0.0.0
 * VSCode 1.49.0
 * vcpkg 2020.06.15
 
-vcpkg is a powerful library manager for C++ that will make it easy to install and add libraries to your C++ projects. You can find it [here](https://github.com/Microsoft/vcpkg).
+`vcpkg` is a powerful library manager for C++ that will make it easy to install and add libraries to your C++ projects. You can find it [here](https://github.com/Microsoft/vcpkg).
 
 ## Prerequisites
 
-Add the following lines to your `.bashrc` so that you can install libraries using `vcpkg` and the Makefile can find them.
+Add the following lines to your `~/.bashrc` so that you can install libraries using `vcpkg` and the Makefile can find them.
 
 ```
 export PATH="/path/to/your/vcpkg:$PATH"
@@ -41,7 +41,7 @@ Open `main.cpp` and press `F5`. This will start the debugger and you can step th
 
 If you want to run an optimized version, you can choose the `g++ Release`, which will build the `O2` optimized version of the `main.cpp` file.
 
-You can run either without the debugger with `Ctrl+F5`.
+You can run either mode without using the debugger with `Ctrl+F5`.
 
 ## Acknowledgements
 
