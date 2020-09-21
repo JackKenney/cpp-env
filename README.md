@@ -55,4 +55,6 @@ You can run either mode without using the debugger with `Ctrl+F5`.
 ## Acknowledgements
 
 * Phil Thomas, CICS, Umass Amherst - C++ introduction as part of CS 687
+* [Dave](https://dev.to/tardisgallifrey) for the `tasks.json` structure
+* [This](https://www2.cs.duke.edu/courses/spring04/cps108/resources/makefiles/sample.html) Duke U. page on Makefiles.
 * `vcpkg` makers at Microsoft for making the automated library management possible
