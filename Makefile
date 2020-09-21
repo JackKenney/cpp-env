@@ -11,6 +11,7 @@ INCLUDE := include
 
 LIBRARIES   := \
 	-I${VCPKG_ROOT}/eigen3_x64-linux/include/eigen3 \
+	-Ilib \
 	# add more absolute-pathed libraries as needed here
 	# ${VCPKG_ROOT} refers to bash environment variable
 
@@ -25,4 +26,5 @@ fast: $(SRC)/*.cpp
 	$(CXX) $(CXX_FAST_FLAGS) -I$(INCLUDE) $^ -o $(BIN)/$(EXECUTABLE)_fast $(LIBRARIES)
 
 clean:
-	rm -f $(BIN)/*
+	rm -f $(find bin/* -type f -not -name 'BIN.md')
+)
