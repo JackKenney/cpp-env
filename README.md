@@ -13,9 +13,18 @@ Version 0.0.0
 
 ## Prerequisites
 
+### Installing `vcpkg`
+
+```bash
+git clone https://github.com/microsoft/vcpkg
+./vcpkg/bootstrap-vcpkg.sh
+```
+
+### Configuring PATH and Environment variables
+
 Add the following lines to your `~/.bashrc` so that you can install libraries using `vcpkg` and the Makefile can find them.
 
-```
+```bash
 export PATH="/path/to/your/vcpkg:$PATH"
 export VCPKG_ROOT="/path/to/your/vcpkg/packages"
 ```
@@ -27,13 +36,13 @@ to sync the updates.
 
 For this example, you need to install the eigen3 library using `vcpkg`
 
-```
+```bash
 vcpkg install eigen3
 ```
 
 Now that the library is installed, you can open the example in vscode. From the root directory of the project, execute:
 
-```
+```bash
 code .
 ```
 
