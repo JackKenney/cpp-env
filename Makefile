@@ -26,5 +26,4 @@ fast: $(SRC)/*.cpp
 	$(CXX) $(CXX_FAST_FLAGS) -I$(INCLUDE) $^ -o $(BIN)/$(EXECUTABLE)_fast $(LIBRARIES)
 
 clean:
-	rm -f $(find bin/* -type f -not -name 'BIN.md')
-)
+	find bin/* -type f -not -name 'BIN.md' -delete
