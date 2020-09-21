@@ -1,3 +1,4 @@
 bin/*
 !bin/BIN.md
-*.csv
+lib/*
+!lib/LIB.md
