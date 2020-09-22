@@ -7,7 +7,8 @@ CXX_FAST_FLAGS := -std=c++17 -O2
 EXECUTABLE := main
 BIN     := bin
 SRC     := src
-INCLUDE := lib
+INCLUDE := include
+LIB		:= lib
 
 LIBRARIES   := \
 	-I${VCPKG_ROOT}/eigen3_x64-linux/include/eigen3 \
@@ -15,10 +16,10 @@ LIBRARIES   := \
 	# ${VCPKG_ROOT} refers to bash environment variable
 
 all: $(SRC)/*.cpp
-	$(CXX) $(CXX_FLAGS) -I$(INCLUDE) $^ -o $(BIN)/$(EXECUTABLE) $(LIBRARIES)
+	$(CXX) $(CXX_FLAGS) -I$(INCLUDE) -I$(LIB) $^ -o $(BIN)/$(EXECUTABLE) $(LIBRARIES)
 
 fast: $(SRC)/*.cpp
-	$(CXX) $(CXX_FAST_FLAGS) -I$(INCLUDE) $^ -o $(BIN)/$(EXECUTABLE)_fast $(LIBRARIES)
+	$(CXX) $(CXX_FAST_FLAGS) -I$(INCLUDE) -I$(LIB) $^ -o $(BIN)/$(EXECUTABLE)_fast $(LIBRARIES)
 
 clean: 
 	find bin/* -type f -not -name 'BIN.md' -delete

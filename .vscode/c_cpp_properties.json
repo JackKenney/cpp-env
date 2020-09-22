@@ -6,7 +6,8 @@
                 "/usr/local/include",
                 "/usr/include",
                 "${workspaceFolder}/*",
-                "${workspaceFolder}/lib/*",
+                "${workspaceFolder}/lib",
+                "${workspaceFolder}/include",
                 "${workspaceFolder}/**",
                 "${vcpkgRoot}/x64-linux/include",
                 "${vcpkgRoot}/x64-linux/include/eigen3"
