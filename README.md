@@ -1,6 +1,6 @@
 # C++ Environment
 
-A C++ project structure for compiling, debugging, and running C++ code using Visual Studio Code.
+A C++ project structure for compiling, debugging, and running C++ code using Visual Studio Code on Unix machines.
 
 Version 1.0.0
 
@@ -11,7 +11,7 @@ Version 1.0.0
 * VSCode 1.49.0
 * vcpkg 2020.06.15
 
-`vcpkg` is a powerful library manager for C++ that will make it easy to install and add libraries to your C++ projects. You can find it [here](https://github.com/Microsoft/vcpkg).
+`vcpkg` is a library manager for C++ that will make it easy to install and add libraries to your C++ projects. You can find it [here](https://github.com/Microsoft/vcpkg).
 
 ## Prerequisites
 
@@ -66,3 +66,6 @@ You can run either mode without using the debugger with `Ctrl+F5`.
 For more information, check out
 
 * [VSCode Tasks Documentation](https://code.visualstudio.com/Docs/editor/tasks)
+* [VSCode Debugging](https://code.visualstudio.com/Docs/editor/debugging)
+* [VSCode C/C++ Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools)
+* [Using C++ on Linux in VS Code](https://code.visualstudio.com/docs/cpp/config-linux)
