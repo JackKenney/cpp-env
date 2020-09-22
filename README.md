@@ -1,6 +1,8 @@
 # C++ Environment
 
-Version 0.0.0
+A C++ project structure for compiling, debugging, and running C++ code using Visual Studio Code.
+
+Version 1.0.0
 
 ## Requirements
 
