@@ -58,3 +58,9 @@ You can run either mode without using the debugger with `Ctrl+F5`.
 * [Dave](https://dev.to/tardisgallifrey) for the `tasks.json` structure
 * [This](https://www2.cs.duke.edu/courses/spring04/cps108/resources/makefiles/sample.html) Duke U. page on Makefiles.
 * `vcpkg` makers at Microsoft for making the automated library management possible
+
+### More information
+
+For more information, check out
+
+* [VSCode Tasks Documentation](https://code.visualstudio.com/Docs/editor/tasks)
