@@ -1,7 +1,7 @@
 # Jack Kenney 2020
 
 CXX       := g++
-CXX_FLAGS := -std=c++17 -ggdb -Wall -Werror
+CXX_FLAGS := -std=c++17 -O0 -ggdb -Wall -Werror
 CXX_FAST_FLAGS := -std=c++17 -O2
 
 EXECUTABLE := main
