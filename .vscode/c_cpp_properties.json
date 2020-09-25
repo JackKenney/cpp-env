@@ -9,6 +9,7 @@
                 "${workspaceFolder}/lib",
                 "${workspaceFolder}/include",
                 "${workspaceFolder}/**",
+                "${CPP_LIB}/*",
                 "${vcpkgRoot}/x64-linux/include",
                 "${vcpkgRoot}/x64-linux/include/eigen3"
             ],

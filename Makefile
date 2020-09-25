@@ -12,6 +12,7 @@ LIB		:= lib
 
 LIBRARIES   := \
 	-I${VCPKG_ROOT}/eigen3_x64-linux/include/eigen3 \
+	-I${CPP_LIB} \
 	# add more absolute-pathed libraries as needed here
 	# ${VCPKG_ROOT} refers to bash environment variable
 

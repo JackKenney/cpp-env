@@ -29,10 +29,12 @@ Add the following lines to your `~/.bashrc` so that you can install libraries us
 ```bash
 export PATH="/path/to/your/vcpkg:$PATH"
 export VCPKG_ROOT="/path/to/your/vcpkg/packages"
+export CPP_LIB="/path/to/your/cpp/libraries/"
 ```
 
-and either close and open your terminal or run `source ~/.bashrc`
-to sync the updates.
+The first two add `vcpkg` to your path so it can be used by the Makefile. If you want to manually install libraries or `vcpkg` does not work on your machine, you can add the `CPP_LIB` environment variable which the `Makefile` will use and include. Unfortunately adding global library support in this way requires this setup step. 
+
+Now either close and open your terminal or run `source ~/.bashrc` to sync the updates.
 
 ## Running example
 
