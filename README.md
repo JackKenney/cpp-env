@@ -2,8 +2,6 @@
 
 A C++ project structure for compiling, debugging, and running C++ code using Visual Studio Code on Unix machines.
 
-Version 1.0.0
-
 ## Requirements
 
 * g++ 9.3.0
