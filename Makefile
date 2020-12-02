@@ -10,11 +10,9 @@ SRC     := src
 INCLUDE := include
 LIB		:= lib
 
-LIBRARIES   := \
-	-I${VCPKG_ROOT}/eigen3_x64-linux/include/eigen3 \
-	-I${CPP_LIB} \
-	# add more absolute-pathed libraries as needed here
-	# ${VCPKG_ROOT} refers to bash environment variable
+ifneq (,${CPP_LIB})
+LIBRARIES := -I${CPP_LIB} 
+endif
 
 all: $(SRC)/*.cpp
 	$(CXX) $(CXX_FLAGS) -I$(INCLUDE) -I$(LIB) $^ -o $(BIN)/$(EXECUTABLE) $(LIBRARIES)

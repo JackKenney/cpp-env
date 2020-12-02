@@ -7,7 +7,7 @@ The `bin` folder is the directory where binaries are placed once compiled. For e
 If you run into an `ld` error 1 or 2 like this:
 
 ```
-g++ -std=c++17 -ggdb -Wall -Werror -Iinclude src/Rectangle.cpp src/Shape.cpp src/main.cpp -o bin/main -I/home/<user>/addons/vcpkg/packages/eigen3_x64-linux/include/eigen3 
+g++ -std=c++17 -ggdb -Wall -Werror -Iinclude -Ilib src/Rectangle.cpp src/Shape.cpp src/main.cpp -o bin/main
 /usr/bin/ld: cannot open output file bin/main: No such file or directory
 collect2: error: ld returned 1 exit status
 make: *** [Makefile:25: bin/main] Error 1

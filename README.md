@@ -6,44 +6,23 @@ A C++ project structure for compiling, debugging, and running C++ code using Vis
 
 * g++ 9.3.0
 * GNU Make 4.2.1
-* VSCode 1.49.0
-* vcpkg 2020.06.15
-
-`vcpkg` is a library manager for C++ that will make it easy to install and add libraries to your C++ projects. You can find it [here](https://github.com/Microsoft/vcpkg).
-
-## Prerequisites
-
-### Installing `vcpkg`
-
-```bash
-git clone https://github.com/microsoft/vcpkg
-./vcpkg/bootstrap-vcpkg.sh
-```
+* VSCode 1.49.0+
 
 ### Configuring PATH and Environment variables
 
-Add the following lines to your `~/.bashrc` so that you can install libraries using `vcpkg` and the Makefile can find them.
+If you would like to reuse libraries across projects, add the following line to your `~/.bashrc`. Otherwise, include the libraries in the local `lib/` folder.
 
 ```bash
-export PATH="/path/to/your/vcpkg:$PATH"
-export VCPKG_ROOT="/path/to/your/vcpkg/packages"
 export CPP_LIB="/path/to/your/cpp/libraries/"
 ```
-
-The first two add `vcpkg` to your path so it can be used by the Makefile. If you want to manually install libraries or `vcpkg` does not work on your machine, you can add the `CPP_LIB` environment variable which the `Makefile` will use and include. Unfortunately adding global library support in this way requires this setup step. 
 
 Now either close and open your terminal or run `source ~/.bashrc` to sync the updates.
 
 ## Running example
 
-For this example, you need to install the eigen3 library using `vcpkg`
+First, unpack the `Eigen` folder from the ZIP download on the Eigen [website](http://eigen.tuxfamily.org/) into either the `lib/` or `CPP_LIB` folder. 
 
-```bash
-vcpkg install eigen3
-```
-
-Now that the library is installed, you can open the example in vscode. From the root directory of the project, execute:
-
+Then you can open VSCode like this:
 ```bash
 code .
 ```
